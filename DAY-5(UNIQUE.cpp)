@@ -1,0 +1,12 @@
+#SOLVING AN ARRAY TO FIND THE UNIQUE ELEMENT FROM AN ARRAY 
+
+
+int findUnique(int *arr, int size)
+{
+   	int ans = 0;
+    
+    for(int i = 0; i<size; i++) {
+        ans = ans^arr[i];
+    }
+    return ans;
+}
